@@ -1,0 +1,30 @@
+<!-- Objective: შექმენით ბიბლიოთეკის აპლიკაცია. წიგნების library სექციაში დამატების შესაძლებლობით.
+კლასის კონსტრუქტორის მეშვეობით შექმენით წიგნების ობიექტები, გამოიტანეთ თითოეული წიგნი საიტზე. 
+გექნებათ 2 გვერდი books და library. წიგნები უნდა იყვნენ არჩეული და გადატანილი library სექციაში, ასევე უნდა შეიძლებოდეს library სექციიდან წიგნის წაშლია.
+
+Requirements:
+1. ძირითადი ფუნქციები: წიგნების დარენდერება, მათი library სექციაში გადაყვანა და იქიდან წაშლა.
+2. დიზაინი და ლოკალური ბაზა: library სექციაში დამატებული წიგნების შენახვა localStorage-ში და მათი გამოყენება  library სექციის ყოველი დარენდერებისას, გამოტანილი წიგნები დაალაგეთ grid-ის მეშვეობით
+3. წიგნის მონიშვნა წაკითხულად ან წაუკითხავად და ამ მონაცემის ლოკალურ ბაზაში შენახვა. -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>library</h1>
+
+    <section id="books">
+        <h2>books</h2>
+        <div class="book-list" id="books-list"></div>
+    </section>
+
+    <section id="library">
+        <h2>library</h2>
+        <div class="library-list" id="library-list"></div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
