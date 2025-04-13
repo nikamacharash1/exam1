@@ -1,0 +1,51 @@
+<!-- Hard Level (34/41): Shopping Cart
+Objective: შექმენით ონლაინ მაღაზიის აპლიკაცია, სადაც მომხმარებელს შეუძლია პროდუქტების კალათაში დამატება/წაშლა/რაოდენობის განახლება.
+Requirements:
+1. ძირითადი ფუნქციები: API-ის გამოყენებით წამოიღეთ პროდუქტები და გამოიტანეთ საიტზე.
+თითოეულ პროდუქტს უნდა ჰქონდეს კალათაში დამატების ღილაკი. დაამატეთ კალათიდან პროდუქტის წაშლის ფუნქცია. კალათის
+ თითოეული განახლებისას მონაცემები 
+აუცილებლად უნდა შეინახოთ localStorage-ში. დამატეთ კალათაში ჩამატებული პროდუქტების რაოდენობის შეცვლის ფუნქცია. 
+როდესაც პროდუქტის რაოდენობა
+ გახდება ნულის ტოლი ის ავტომატურად უნდა წაიშალოს კალათიდან. 
+2. დიზაინი: გასტილეთ საიტი ლამაზად. პროდუქტების გამოსატანათ გამოიყენეთ grid-ი. კარგი იქნება თუ დაამატებთ რესპონსივს.
+3. დამატებითი ფუნქციები: დაამატეთ თითოეული პროდუქტისთვის ფასის გამოთვლა.(რაოდენობა * ფასზე). გამოითვალეთ კალათაში
+ დამატებული პროდუქტების full price მათი რაოდენობის გათვალისწინებით
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Online Shop</title>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+     <header>
+         <h1>Online Shop</h1>
+         <div class="cart-icon">
+             <i class="fas fa-shopping-cart"></i>
+             <span id="cart-count">0</span>
+         </div>
+     </header>
+ 
+     <main>
+         <section class="products-section">
+             <h2>Our Products</h2>
+             <div class="products-grid" id="products-grid">
+             </div>
+         </section>
+ 
+         <aside class="cart-section">
+             <h2>Your Cart</h2>
+             <div class="cart-items" id="cart-items">
+             </div>
+             <div class="cart-summary">
+                 <p>Total: $<span id="cart-total">0.00</span></p>
+                 <button class="checkout-btn">Checkout</button>
+             </div>
+         </aside>
+     </main>
+ 
+     <script src="./script.js"></script>
+ </body>
+ </html>
